@@ -1,5 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\AlbumTrackerMVC1.Models\AlbumTrackerMVC1.Models.csproj" />
+    <ProjectReference Include="..\AlbumTrackerMVC1.Data\AlbumTrackerMVC1.Data.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
