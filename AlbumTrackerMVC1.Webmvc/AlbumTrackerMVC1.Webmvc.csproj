@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
     <ProjectReference Include="..\AlbumTrackerMVC1.Services\AlbumTrackerMVC1.Services.csproj" />
@@ -10,6 +10,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>012401d1-2302-4b8b-9a0e-40ac76e25a04</UserSecretsId>
   </PropertyGroup>
 
 </Project>
