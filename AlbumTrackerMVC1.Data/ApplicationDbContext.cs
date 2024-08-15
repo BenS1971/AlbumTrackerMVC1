@@ -11,5 +11,6 @@ public class ApplicationDbContext : DbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext>options)
         : base(options) {}
+        
     public DbSet<AlbumEntity> Albums { get; set; }
 }  

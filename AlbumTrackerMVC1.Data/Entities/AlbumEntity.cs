@@ -6,6 +6,9 @@ namespace AlbumTrackerMVC1.Data.Entities;
 
 public class AlbumEntity 
 {
+    [Key]
+    public int AlbumId { get; set; }
+
     [Required]
     [MaxLength(150)]
     public string? AlbumName { get; set;}
