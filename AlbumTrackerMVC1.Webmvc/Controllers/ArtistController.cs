@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AlbumTrackerMVC1.Webmvc.Controllers;
 
 
-public class ArtistController
+public class ArtistController : Controller
 {
     
 }
