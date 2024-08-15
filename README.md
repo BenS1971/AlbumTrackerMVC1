@@ -7,7 +7,7 @@
 
 ### From the Home page, the user can search for an album, an album artist (Say a band, a duo, an orchestra, or a solo music artist) or an individual song. The latter can be used to find a song whose album it camme from and/or who recorded it. So there are pages for the Albums, Album Artists, and Songs and users of Album Tracker MVC can find what they need to know on one of those pages.
 
-### For example, let's say someone wanted to know how many versions of "Stairway To Heaven" they have in their albun collection. So they would go to the "Songs" page and look up "Stairway to Heaven" and might find versions by Led Zeppelin, Dolly Parton, or even some obscure local band.
+### For example, let's say someone wanted to know how many versions of "Stairway To Heaven" they have in their album collection. So they would go to the "Songs" page and look up "Stairway to Heaven" and might find versions by Led Zeppelin, Dolly Parton, or even some obscure local band.
 
 ### Another use for Album Tracker is to look up what albums from an artist they may have. It can be done by clicking on the Artists page.
 
