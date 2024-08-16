@@ -7,7 +7,6 @@ namespace AlbumTrackerMVC1.Data.Entities;
 public class ArtistEntity
 {
     [Key]
-    [Required]
     public int AlbumId { get; set; }
 
     [Required]
