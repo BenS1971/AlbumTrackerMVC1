@@ -7,8 +7,5 @@ public class AlbumViewModel
     public string? ArtistName { get; set; }
     public string? Format {get; set; }
     public string? Genre { get; set; }
-
     public DateTime ReleaseYear {get; set;}
-
-
 }
