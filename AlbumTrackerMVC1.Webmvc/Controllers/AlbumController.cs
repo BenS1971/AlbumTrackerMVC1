@@ -15,3 +15,17 @@ public class AlbumController : Controller
         return View();
     }
 }
+    // Create an album...
+    [HttpGet]
+    
+    // Read an album...
+    [HttpPost]
+    
+    // Update an album...
+        
+
+    //Delete an album...
+    
+   
+
+
