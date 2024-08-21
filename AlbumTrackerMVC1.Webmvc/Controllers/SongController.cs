@@ -13,4 +13,15 @@ public class SongController : Controller
     {
         return View();
     }
+    // Create a song...
+
+    
+    // Read a song...
+
+    
+    // Update a song...
+        
+
+    //Delete a song...
+    
 }

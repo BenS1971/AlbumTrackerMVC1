@@ -13,4 +13,16 @@ public class ArtistController : Controller
     {
         return View();
     }
+
+    // Create an artist...
+
+    
+    // Read an artist...
+
+    
+    // Update an artist...
+        
+
+    //Delete an atist...
+    
 }

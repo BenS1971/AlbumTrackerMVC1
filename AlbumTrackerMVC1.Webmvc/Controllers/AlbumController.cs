@@ -16,10 +16,10 @@ public class AlbumController : Controller
     }
 }
     // Create an album...
-    [HttpGet]
+
     
     // Read an album...
-    [HttpPost]
+
     
     // Update an album...
         
