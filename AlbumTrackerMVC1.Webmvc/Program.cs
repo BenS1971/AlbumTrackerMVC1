@@ -2,6 +2,8 @@ using AlbumTrackerMVC1.Data;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using AlbumTrackerMVC1.Services.Albums;
+using AlbumTrackerMVC1.Services.Artists;
+using AlbumTrackerMVC1.Services.Songs;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +16,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddMvc();
 
 builder.Services.AddScoped<IAlbumService, AlbumsService>();
+
+builder.Services.AddScoped<IArtistsService, ArtistsService>();
+
+builder.Services.AddScoped<ISongsService, SongsService>();
 
 var app = builder.Build();
 
