@@ -1,3 +1,4 @@
+using AlbumTrackerMVC1.Services.Artists;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -5,14 +6,11 @@ namespace AlbumTrackerMVC1.Webmvc.Controllers;
 
 public class SongController : Controller
 {
-    public SongController(IHttpClientFactory httpClientFactory)
-    {
-        
-    }
-    public IActionResult Index()
-    {
-        return View();
-    }
+    private ISongsService _service;
+        public SongController(ISongsService service)
+        {
+            _service = service;
+        }
     // Create a song...
 
     
