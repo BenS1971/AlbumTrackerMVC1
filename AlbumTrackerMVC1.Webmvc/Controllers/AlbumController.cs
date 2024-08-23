@@ -20,18 +20,19 @@ namespace AlbumTrackerMVC1.Webmvc.Controllers;
     
     
     // Create an album...
-        [HttpPost]
-        public async Task<IActionResult> 
+    
+
+    
+      
     
     // Read an album...
-        [HttpGet]
+       
        
 
 
     // Update an album...
-        [HttpPut]
+        
 
     //Delete an album...
-        [HttpDelete]
-}
-
+     
+    }
