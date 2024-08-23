@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace AlbumTrackerMVC1.Models.Albums;
 
+//This is an attempt at a model to create an album.
 public class AlbumCreate
 {
     [Required]
