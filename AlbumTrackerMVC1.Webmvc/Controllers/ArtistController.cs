@@ -12,6 +12,12 @@ public class ArtistController : Controller
             _service = service;
         }
 
+        public IActionResult Index()
+        {
+            return View();
+        }
+    
+
     // Create an artist...
 
     

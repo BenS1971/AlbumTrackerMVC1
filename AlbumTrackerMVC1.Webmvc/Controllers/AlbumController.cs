@@ -17,11 +17,16 @@ namespace AlbumTrackerMVC1.Webmvc.Controllers;
         {
             _service = service;
         }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
     
     
     // Create an album...
     
-
+    
     
       
     

@@ -11,6 +11,12 @@ public class SongController : Controller
         {
             _service = service;
         }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+    
     // Create a song...
 
     
