@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.WebEncoders.Testing;
 using AlbumTrackerMVC1.Models;
+using AlbumTrackerMVC1.Models.Albums;
 
 namespace AlbumTrackerMVC1.Webmvc.Controllers;
 
@@ -12,8 +13,8 @@ namespace AlbumTrackerMVC1.Webmvc.Controllers;
     public class AlbumController : Controller
     {
        
-        private IAlbumService _service;
-        public AlbumController(IAlbumService service)
+        private IAlbumsService _service;
+        public AlbumController(IAlbumsService service)
         {
             _service = service;
         }
@@ -25,7 +26,17 @@ namespace AlbumTrackerMVC1.Webmvc.Controllers;
     
     
     // Create an album...
-    
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View();
+
+    }
+    [HttpPost]
+    public IActionResult Create(AlbumCreate album)
+    {
+        return RedirectToAction(nameof(Index));
+    } 
     
     
       

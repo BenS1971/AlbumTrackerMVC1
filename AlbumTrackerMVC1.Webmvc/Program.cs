@@ -6,6 +6,7 @@ using AlbumTrackerMVC1.Services.Artists;
 using AlbumTrackerMVC1.Services.Songs;
 
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -19,6 +20,8 @@ builder.Services.AddMvc();
 builder.Services.AddScoped<IArtistsService, ArtistsService>();
 
 builder.Services.AddScoped<ISongsService, SongsService>();
+
+builder.Services.AddScoped<IAlbumsService, AlbumsService>();
 
 var app = builder.Build();
 

@@ -1,0 +1,21 @@
+@using AlbumTrackerMVC1.Models.Albums
+@model AlbumCreate
+
+@{
+    ViewData["Title"] = "CreateAlbum";
+}
+
+<h1>Create Album</h1>
+<form asp-action="Create" method = "post">
+<div> <label asp-for = "AlbumName" class= "form-label"></label>
+<input asp-for = "AlbumName" class= "form-control">
+</div>
+<div>
+<label asp-for = "ArtistName" class= "form-label"></label>
+<label asp-for = "ArtistName" class= "form-control"></label>
+</div>
+<div>
+<a asp-action = "Index">Back To List</a>
+<input type = "submit" value = "Create" class = "btn btn-primary" 
+</div>
+</form>

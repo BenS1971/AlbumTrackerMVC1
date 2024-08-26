@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AlbumTrackerMVC1.Services.Albums;
 
-public interface IAlbumService
+public interface IAlbumsService
 {
     Task AlbumCreateAsync();
     Task<IEnumerable<AlbumList>> ListAlbumsAsync();
