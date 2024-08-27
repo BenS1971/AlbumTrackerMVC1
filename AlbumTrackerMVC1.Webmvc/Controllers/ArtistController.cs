@@ -1,48 +1,27 @@
-using AlbumTrackerMVC1.Models.Artists;
-using AlbumTrackerMVC1.Services.Artists;
+
 using Microsoft.AspNetCore.Mvc;
 
-namespace AlbumTrackerMVC1.Webmvc.Controllers;
-
-
-public class ArtistController : Controller
+namespace AlbumTrackerMVC1.Webmvc.Controllers
 {
-    private IArtistsService _service;
-        public ArtistController(IArtistsService service)
-        {
-            _service = service;
-        }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-    
-
-    // Create an artist...
-    [HttpPost]
-    public IActionResult Create()
+    public class ArtistController : Controller
     {
-        return View();
+
+
+
+        // Create an artist...
+
+
+
+
+
+
+        // Read an artist...
+
+        // Update an artist...
+
+        //Delete an atist...
+
 
     }
-
-
-    [HttpGet]
-    public IActionResult Create(ArtistAdd artist)
-    {
-        return RedirectToAction(nameof(Index));
-    } 
-    
-
-    
-    // Read an artist...
-
-    
-    // Update an artist...
-        
-
-    //Delete an atist...
-    
 }
-

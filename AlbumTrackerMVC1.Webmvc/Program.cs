@@ -1,5 +1,4 @@
 using AlbumTrackerMVC1.Data;
-using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using AlbumTrackerMVC1.Services.Albums;
 using AlbumTrackerMVC1.Services.Artists;
@@ -7,7 +6,7 @@ using AlbumTrackerMVC1.Services.Songs;
 
 
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddControllersWithViews();
@@ -23,14 +22,12 @@ builder.Services.AddScoped<ISongsService, SongsService>();
 
 builder.Services.AddScoped<IAlbumsService, AlbumsService>();
 
-var app = builder.Build();
+WebApplication app = builder.Build();
 
 
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
 
-    app.UseHsts();
 }
 
 app.UseHttpsRedirection();
