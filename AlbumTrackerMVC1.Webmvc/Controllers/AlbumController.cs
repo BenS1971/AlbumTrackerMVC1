@@ -8,7 +8,12 @@ namespace AlbumTrackerMVC1.Webmvc.Controllers
     {
 
         private readonly IAlbumsService _service = service;
-        private static IAlbumsService service;
+        private static IAlbumsService? service;
+
+        public IActionResult Index()
+        {
+            return View();
+        }
 
 
 
