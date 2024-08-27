@@ -6,7 +6,11 @@ namespace AlbumTrackerMVC1.Models.Songs;
 
 public class ListSongs
 {
+   [Display(Name = "Song Name")]
    public required string SongName { get; set;}
+   [Display(Name = "Artist Name")]
    public string? ArtistName { get; set;}
+   [Display(Name = "Song Duration")]
    public DateTime SongDuration { get; set;}
 }
+
