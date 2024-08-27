@@ -1,33 +1,30 @@
 
 using Microsoft.AspNetCore.Mvc;
-using AlbumTrackerMVC1.Models.Albums;
 
 namespace AlbumTrackerMVC1.Webmvc.Controllers
 {
 
-    public class AlbumController(IAlbumsService service) : Controller
+    public class AlbumController : Controller
     {
 
         private readonly IAlbumsService _service = service;
+        private static IAlbumsService service;
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+
 
 
         // Create an album...
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult AlbumAdd()
         {
             return View();
 
         }
-        [HttpPost]
-        public IActionResult Create(AlbumCreate)
+
+        private interface IAlbumsService
         {
-            return RedirectToAction(nameof(Index));
         }
+
 
 
 
@@ -41,6 +38,5 @@ namespace AlbumTrackerMVC1.Webmvc.Controllers
 
 
         //Delete an album...
-
     }
 }
