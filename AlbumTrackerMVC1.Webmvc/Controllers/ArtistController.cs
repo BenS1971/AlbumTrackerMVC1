@@ -1,3 +1,4 @@
+using AlbumTrackerMVC1.Models.Artists;
 using AlbumTrackerMVC1.Services.Artists;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,6 +20,20 @@ public class ArtistController : Controller
     
 
     // Create an artist...
+    [HttpPost]
+    public IActionResult Create()
+    {
+        return View();
+
+    }
+
+
+    [HttpGet]
+    public IActionResult Create(ArtistAdd artist)
+    {
+        return RedirectToAction(nameof(Index));
+    } 
+    
 
     
     // Read an artist...
@@ -30,3 +45,4 @@ public class ArtistController : Controller
     //Delete an atist...
     
 }
+
