@@ -1,13 +1,12 @@
-using System.ComponentModel.DataAnnotations;
-
-namespace AlbumTrackerMVC1.Models.Artists;
-
-public class ArtistList
+namespace AlbumTrackerMVC1.Models.Artists
 {
-     
-     public required string AlbumName {get; set;}
+    public class ArtistList
+    {
 
-     public string? Format { get; set; }
+        public required string AlbumName { get; set; }
 
-     public string? Genre { get; set; }
- }
+        public string? Format { get; set; }
+
+        public string? Genre { get; set; }
+    }
+}
