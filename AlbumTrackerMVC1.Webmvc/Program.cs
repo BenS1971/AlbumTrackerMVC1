@@ -1,9 +1,13 @@
 using AlbumTrackerMVC1.Data;
 using Microsoft.EntityFrameworkCore;
 using AlbumTrackerMVC1.Services.Artists;
-;
+using AlbumTrackerMVC1.Services.Albums;
+using AlbumTrackerMVC1.Services.Songs;
+
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+
+//Builder services go here...
 
 
 builder.Services.AddControllersWithViews();
@@ -15,10 +19,9 @@ builder.Services.AddMvc();
 
 builder.Services.AddScoped<IArtistsService, ArtistsService>();
 
+builder.Services.AddScoped<IAlbumsService, AlbumsService>();
 
-
-
-
+builder.Services.AddScoped<ISongsService, SongService>();
 
 
 WebApplication app = builder.Build();

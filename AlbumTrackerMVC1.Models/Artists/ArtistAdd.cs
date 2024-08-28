@@ -8,7 +8,7 @@ namespace AlbumTrackerMVC1.Models.Artists
     {
         [Required]
         [StringLength(200)]
-        public string ArtistName {get; set;} = string.Empty;
+        public string ArtistName { get; set; } = string.Empty;
 
         public string? Format { get; set; } = string.Empty;
 
