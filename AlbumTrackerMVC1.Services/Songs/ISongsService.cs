@@ -1,7 +1,7 @@
-namespace AlbumTrackerMVC1.Services.Artists
+namespace AlbumTrackerMVC1.Services.Songs
 {
     public interface ISongsService
     {
-    
+
     }
 }

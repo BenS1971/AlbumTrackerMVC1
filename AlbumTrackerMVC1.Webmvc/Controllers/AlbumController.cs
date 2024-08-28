@@ -7,8 +7,12 @@ namespace AlbumTrackerMVC1.Webmvc.Controllers
     public class AlbumController : Controller
     {
 
-        private readonly IAlbumsService _service = service;
-        private static IAlbumsService? service;
+        private readonly IAlbumsService _service;
+
+        public AlbumController(IAlbumsService service)
+        {
+            _service = service;
+        }
 
         public IActionResult Index()
         {
@@ -26,17 +30,7 @@ namespace AlbumTrackerMVC1.Webmvc.Controllers
 
         }
 
-        private interface IAlbumsService
-        {
-        }
-
-
-
-
-
         // Read an album...
-
-
 
 
         // Update an album...
