@@ -16,30 +16,27 @@ namespace AlbumTrackerMVC1.Webmvc.Controllers
         }
 
 
-        // Create an album...
-        [HttpGet]
-        public IActionResult Create()
+        // Create an artist...
+        [HttpPost]
+        public IActionResult AddArtist()
         {
             return View();
 
         }
 
-        private interface IAlbumsService
+        // Read an artist...
+        [HttpGet]
+        public IActionResult EditArtist()
         {
+            return View();
         }
 
+        // Update an artist...
 
 
 
 
-        // Read an album...
 
-
-
-
-        // Update an album...
-
-
-        //Delete an album...
+        //Delete an artist...
     }
 }

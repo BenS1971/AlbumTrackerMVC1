@@ -1,5 +1,7 @@
 
+using AlbumTrackerMVC1.Services.Albums;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace AlbumTrackerMVC1.Webmvc.Controllers
 {
@@ -23,19 +25,37 @@ namespace AlbumTrackerMVC1.Webmvc.Controllers
 
 
         // Create an album...
-        [HttpGet]
+
+        [HttpPost]
         public IActionResult AlbumAdd()
         {
-            return View();
+            return View(AlbumAdd);
 
         }
 
         // Read an album...
 
+        [HttpGet]
+        public IActionResult ListAlbum()
+        {
+            return View();
+        }
 
         // Update an album...
 
+        [HttpPut]
+        public IActionResult UpdateAlbum()
+        {
+            return View();
+        }
+
 
         //Delete an album...
+
+        [HttpDelete]
+        public IActionResult DeleteAlbum()
+        {
+            return View();
+        }
     }
 }
