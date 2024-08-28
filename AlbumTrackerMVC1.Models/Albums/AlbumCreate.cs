@@ -8,11 +8,11 @@ namespace AlbumTrackerMVC1.Models.Albums
     {
         [Required]
         [StringLength(200)]
-        public string AlbumName {get; set; } = string.Empty;
+        public string AlbumName { get; set; } = string.Empty;
 
 
         [StringLength(200)]
-        public string ArtistName {get; set;} = string.Empty;
+        public string ArtistName { get; set; } = string.Empty;
 
         public string? Format { get; set; } = string.Empty;
 
