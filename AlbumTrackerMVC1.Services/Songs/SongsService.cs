@@ -1,13 +1,16 @@
+using AlbumTrackerMVC1.Models.Songs;
+
 namespace AlbumTrackerMVC1.Services.Songs
 {
-    public class AlbumsService : ISongsService
+    public class SongsService : ISongsService
     {
-        public Task<bool> AddAlbumAsync(SongCreate model)
+        public Task<bool> AddSongAsync(AddSong model)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> DeleteSongAsync(string AlbumId)
+
+        public Task<bool> DeleteSongAsync(string song)
         {
             throw new NotImplementedException();
         }
@@ -21,5 +24,18 @@ namespace AlbumTrackerMVC1.Services.Songs
         {
             throw new NotImplementedException();
         }
+
+        Task<IEnumerable<ListSongs>> ISongsService.GetSongsAsync()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class SongList
+    {
+    }
+
+    public class SongCreate
+    {
     }
 }
