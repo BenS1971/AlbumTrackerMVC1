@@ -1,8 +1,9 @@
 using AlbumTrackerMVC1.Data;
 using Microsoft.EntityFrameworkCore;
 using AlbumTrackerMVC1.Services.Artists;
-using AlbumTrackerMVC1.Services.Albums;
 using AlbumTrackerMVC1.Services.Songs;
+using AlbumTrackerMVC1.Services.Albums;
+
 
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
@@ -19,9 +20,10 @@ builder.Services.AddMvc();
 
 builder.Services.AddScoped<IArtistsService, ArtistsService>();
 
-builder.Services.AddScoped<IAlbumsService, AlbumsService>();
+builder.Services.AddScoped<IAlbumsService, AlbumTrackerMVC1.Services.Albums.AlbumsService>();
 
-builder.Services.AddScoped<ISongsService, SongService>();
+builder.Services.AddScoped<ISongsService, SongsService>();
+
 
 
 WebApplication app = builder.Build();
@@ -44,6 +46,10 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+
+
+
 
 
 // "In here, program. You are a prisoner of the MCP. This way to the Dead Zone! End of line." (Tron reference.)

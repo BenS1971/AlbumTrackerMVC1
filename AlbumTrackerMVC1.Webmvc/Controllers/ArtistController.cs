@@ -35,8 +35,7 @@ namespace AlbumTrackerMVC1.Webmvc.Controllers
 
 
 
-
-
         //Delete an artist...
+
     }
 }
