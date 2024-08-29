@@ -26,16 +26,28 @@ namespace AlbumTrackerMVC1.Webmvc.Controllers
 
         // Read an artist...
         [HttpGet]
-        public IActionResult EditArtist()
+        public IActionResult ReadArtist()
         {
             return View();
         }
 
         // Update an artist...
 
+        [HttpPut]
+        public IActionResult UpdateArtist()
+        {
+            return View();
+        }
+
 
 
         //Delete an artist...
+
+        [HttpDelete]
+        public IActionResult DeleteArtist()
+        {
+            return View();
+        }
 
     }
 }

@@ -14,7 +14,7 @@ namespace AlbumTrackerMVC1.Webmvc.Controllers
         }
 
 
-        // Create an album...
+        // Add A Song...
         [HttpGet]
         public IActionResult Create()
         {
@@ -22,35 +22,25 @@ namespace AlbumTrackerMVC1.Webmvc.Controllers
 
         }
 
-        private interface IAlbumsService
+        // Read a Song...
+
+        [HttpGet]
+        public IActionResult ListSong()
         {
+            return View();
         }
 
 
+        // Update a Song (Not used)
 
 
+        // Delete an album...
 
-        // Read an album...
-
-
-
-
-        // Update an album...
-
-
-        //Delete an album...
+        [HttpDelete]
+        public IActionResult DeleteSong()
+        {
+            return View();
+        }
     }
-
-
-
-
-
-    // Read a song...
-
-
-    // Update a song...
-
-
-    //Delete a song...
 
 }
