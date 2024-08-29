@@ -4,11 +4,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AlbumTrackerMVC1.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : DbContext(options)
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options) { }
-
         public DbSet<AlbumEntity> Albums { get; set; }
     }
 }

@@ -1,12 +1,14 @@
 using AlbumTrackerMVC1.Models.Songs;
 
-namespace AlbumTrackerMVC1.Services.Songs;
-public interface ISongsService
+namespace AlbumTrackerMVC1.Services.Songs
 {
-    Task<IEnumerable<ListSongs>> GetSongsAsync();
-    Task<bool> AddSongAsync(AddSong model);
+    public interface ISongsService
+    {
+        Task<IEnumerable<ListSongs>> GetSongsAsync();
+        Task<bool> AddSongAsync(AddSong model);
 
-    Task<bool> DeleteSongAsync(string song);
+        Task<bool> DeleteSongAsync(string song);
+
+    }
 
 }
-
